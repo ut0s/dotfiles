@@ -17,6 +17,14 @@
   )
 
 ;;
+;;exec-path-from-shell
+;; (use-package exec-path-from-shell
+;;   :ensure t
+;;   :config
+;;   (exec-path-from-shell-initialize)
+;;   )
+
+;;
 ;;expand-region
 (use-package expand-region
   :ensure t
@@ -47,3 +55,12 @@
   :hook (highlight-symbol-mode-hook . highlight-symbol-nav-mode)
   )
 
+;;
+;;point-undo.el
+(use-package point-undo
+  :straight nil
+  :load-path "site-lisp"
+  :config
+  (bind-key* "<f7>" 'point-undo)
+  (bind-key* "C-<f7>" 'point-redo)
+  )

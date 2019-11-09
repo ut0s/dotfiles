@@ -37,24 +37,6 @@
 ;; 選択範囲をハイライト
 ;;(transient-mark-mode t)
 
-;;
-;;find-file時にバックアップファイルなども表示しない
-(defadvice completion-file-name-table (after ignoring-backups-f-n-completion activate)
-  "filter out results when the have completion-ignored-extensions"
-  (let ((res ad-return-value))
-    (if (and (listp res)
-             (stringp (car res))
-             (cdr res)) ; length > 1, don't ignore sole match
-        (setq ad-return-value
-              (completion-pcm--filename-try-filter res)))))
-
-;; バックアップとオートセーブファイルを~/.emacs.d/.backup/へ集める
-(add-to-list 'backup-directory-alist
-             (cons "." "~/.emacs.d/.backup/"))
-(setq auto-save-file-name-transforms
-      `((".*" ,(expand-file-name "~/.emacs.d/.backup/") t)))
-
-
 
 ;;
 ;;shebangが付いているファイルのパーミッションを保存時に +x にしてくれる設定

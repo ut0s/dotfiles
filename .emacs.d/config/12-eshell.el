@@ -1,5 +1,4 @@
 ;; 12-eshell.el
-
 (use-package eshell
   :straight nil
   :config
