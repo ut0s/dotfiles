@@ -1,0 +1,86 @@
+*.*~
+*.*#
+.config/fish/functions/*
+.config/fish/fishd.*
+.config/fish/completions/*.fish
+.config/fish/fishfile
+.config/fish/conf.d/
+.config/fish/fish_variables
+
+
+cloning_git/*
+
+/git/gitconfig
+
+.emacs.d/auto-save-list/*
+.emacs.d/.undohist/*
+.emacs.d/.emacs.desktop/*
+.emacs.d/.session
+.emacs.d/session.*
+.emacs.d/.recentf
+.emacs.d/.backup
+.emacs.d/tramp
+.emacs.d/semanticdb
+.emacs.d/straight
+.emacs.d/transient
+.emacs.d/url
+.emacs.d/elpa/*
+.emacs.d/.python-environments
+.emacs.d/irony/*
+.emacs.d/ac-comphist.dat
+.emacs.d/.bm-repository
+
+
+.processing/console/*.err
+.processing/console/*.out
+
+
+### https://raw.github.com/github/gitignore/f908e51bcf38ae5ede449c55189a7b25d8c507cc/Global/Emacs.gitignore
+
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# flymake-mode
+*_flymake.*
+
+# eshell files
+/eshell/history
+/eshell/lastdir
+
+# reftex files
+*.rel
+
+# AUCTeX auto folder
+/auto/
+
+# cask packages
+.cask/
+dist/
+
+# Flycheck
+flycheck_*.el
+
+# server auth directory
+/server/
+
+# projectiles files
+.projectile
+
+# directory configuration
+.dir-locals.el
+
+# network security
+.emacs.d/network-security.data
+/.emacs.d/eshell/
+/.emacs.d/server/

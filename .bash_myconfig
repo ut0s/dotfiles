@@ -1,0 +1,28 @@
+# path setting
+export PATH=${PATH}:$HOME/bin:$HOME/usr/bin/:$HOME/usr/local/bin/
+
+#python startup interactive mode
+export PYTHONSTARTUP=$HOME/.pythonstartup
+
+if [ -d "$HOME/.local/bin" ]; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+if [ -d "$HOME/.cargo/bin" ]; then
+    PATH=":$HOME/.cargo/bin/:$PATH"
+fi
+
+
+# export LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib/
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$HOME/usr/lib/
+
+
+# PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/
+
+export CARGO_HOME=$HOME
+export CARGO_TARGET_DIR=$HOME/usr
+
+
+

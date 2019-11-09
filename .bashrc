@@ -188,3 +188,12 @@
 # }
 # 
 # alias cd=cd_func
+
+# additional settings
+if [ -f ~/.bash_alias ]; then
+    source ~/.bash_alias
+fi
+
+if [ -f ~/.bash_myconfig ]; then
+    source ~/.bash_myconfig
+fi
