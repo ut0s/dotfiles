@@ -1,6 +1,6 @@
 ;;22-ivy-swiper.el
 (use-package counsel
-  :ensure t
+  :disabled
   :config
   (ivy-mode 1)
   (counsel-mode 1)

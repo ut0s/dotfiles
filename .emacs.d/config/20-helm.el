@@ -1,7 +1,6 @@
 ;;
 ;;helm
 (use-package helm
-  :disabled
   :config
   (require 'helm-config)
   (helm-mode 1)
