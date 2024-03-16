@@ -1,0 +1,31 @@
+brew "shellcheck"
+brew "shfmt"
+brew "emacs"
+brew "tmux"
+brew "tpm"
+brew "trash-cli"
+brew "direnv"
+brew "fish"
+brew "fisher"
+brew "ranger"
+brew "ripgrep"
+brew "fzf"
+brew "cmigemo"
+brew "alacritty"
+brew "font-dejavu-sans-mono-for-powerline "
+brew "font-noto-sans-mono-cjk-jp"
+brew "terminal-notifier"
+
+if OS.mac?
+  brew "battery"
+  brew "google-chrome"
+  brew "scroll-reverser"
+  brew "skim"
+  brew "numi"
+  brew "rectangle"
+  brew "visual-studio-code"
+  brew "raycast"
+  # mas
+  brew "mas"
+  mas "Amphetamine", id: 937984704
+end
