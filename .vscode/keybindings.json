@@ -1,0 +1,791 @@
+[
+  {
+    "key": "cmd+k cmd+c",
+    "command": "-editor.action.addCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+k cmd+u",
+    "command": "-editor.action.removeCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+;",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd && !editorReadonly"
+  },
+  {
+    "key": "cmd+;",
+    "command": "-editor.action.blockComment",
+    "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "escape ;",
+    "command": "-editor.action.blockComment",
+    "when": "config.emacs-mcx.useMetaPrefixEscape && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+[ ;",
+    "command": "-editor.action.blockComment",
+    "when": "config.emacs-mcx.useMetaPrefixCtrlLeftBracket && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "-editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+c c",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+/",
+    "command": "-editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+x ctrl+c",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+  },
+  {
+    "key": "ctrl+x 0",
+    "command": "-workbench.action.closeEditorsInGroup",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditorInGroup"
+  },
+  {
+    "key": "cmd+k alt+cmd+right",
+    "command": "-workbench.action.nextEditorInGroup"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditorInGroup"
+  },
+  {
+    "key": "cmd+k alt+cmd+left",
+    "command": "-workbench.action.previousEditorInGroup"
+  },
+  {
+    "key": "ctrl+x 1",
+    "command": "-workbench.action.closeEditorsInOtherGroups",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "cmd+k shift+cmd+left",
+    "command": "-workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "cmd+k shift+cmd+right",
+    "command": "-workbench.action.moveEditorRightInGroup"
+  },
+  {
+    "key": "f3",
+    "command": "editor.action.wordHighlight.next",
+    "when": "editorTextFocus && hasWordHighlights"
+  },
+  {
+    "key": "f7",
+    "command": "-editor.action.wordHighlight.next",
+    "when": "editorTextFocus && hasWordHighlights"
+  },
+  {
+    "key": "shift+f3",
+    "command": "editor.action.wordHighlight.prev",
+    "when": "editorTextFocus && hasWordHighlights"
+  },
+  {
+    "key": "shift+f7",
+    "command": "-editor.action.wordHighlight.prev",
+    "when": "editorTextFocus && hasWordHighlights"
+  },
+  {
+    "key": "ctrl",
+    "command": "highlightwords.removeHighlight"
+  },
+  {
+    "key": "ctrl+f3",
+    "command": "highlightwords.addHighlight"
+  },
+  {
+    "key": "alt+escape",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+/",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd"
+  },
+  {
+    "key": "cmd+/",
+    "command": "-editor.action.triggerSuggest",
+    "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus"
+  },
+  {
+    "key": "escape /",
+    "command": "-editor.action.triggerSuggest",
+    "when": "config.emacs-mcx.useMetaPrefixEscape && editorTextFocus"
+  },
+  {
+    "key": "ctrl+[ /",
+    "command": "-editor.action.triggerSuggest",
+    "when": "config.emacs-mcx.useMetaPrefixCtrlLeftBracket && editorTextFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "f2",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "editor.action.smartSelect.grow"
+  },
+  {
+    "key": "cmd+w",
+    "command": "multiclip.copy",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-multiclip.copy",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "multiclip.cut",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+x",
+    "command": "-multiclip.cut",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+y",
+    "command": "multiclip.list"
+  },
+  {
+    "key": "ctrl+x ctrl+j",
+    "command": "extension.dired.open",
+    "when": "editorTextFocus && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+x f",
+    "command": "-extension.dired.open",
+    "when": "editorTextFocus && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+x i",
+    "command": "editor.action.insertSnippet"
+  },
+  {
+    "key": "ctrl+\\",
+    "command": "editor.toggleFold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+k cmd+l",
+    "command": "-editor.toggleFold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+x 1",
+    "command": "workbench.action.joinAllGroups"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "extension.dired.enter",
+    "when": "dired.open && !findWidgetVisible && !inQuickOpen"
+  },
+  {
+    "key": "cmd+k cmd+/",
+    "command": "-editor.foldAllBlockComments",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  {
+    "key": "cmd+k w",
+    "command": "-workbench.action.closeEditorsInGroup"
+  },
+  {
+    "key": "cmd+k cmd+1",
+    "command": "-editor.foldLevel1",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+k cmd+2",
+    "command": "-editor.foldLevel2",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+k cmd+3",
+    "command": "-editor.foldLevel3",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+k cmd+4",
+    "command": "-editor.foldLevel4",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+k cmd+5",
+    "command": "-editor.foldLevel5",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+k cmd+6",
+    "command": "-editor.foldLevel6",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+k cmd+7",
+    "command": "-editor.foldLevel7",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "shift+cmd+x",
+    "command": "-multiclip.cutMerge",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-multiclip.copyMerge",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "multiclip.regularPaste",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+v",
+    "command": "-multiclip.regularPaste",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+v",
+    "command": "-multiclip.paste",
+    "when": "editorTextFocus && editorLangId != 'markdown'"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.switchWindow"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.terminal.killEditor",
+    "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "cmd+k shift+cmd+w",
+    "command": "-workbench.action.closeAllGroups"
+  },
+  {
+    "key": "cmd+k cmd+w",
+    "command": "-workbench.action.closeAllEditors"
+  },
+  {
+    "key": "ctrl+x g",
+    "command": "magit.status"
+  },
+  {
+    "key": "alt+x g",
+    "command": "-magit.status"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "magit.toggle-fold",
+    "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "magit.visit-at-point",
+    "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+  },
+  {
+    "key": "ctrl+x ctrl+f",
+    "command": "extension.dired.createFile",
+    "when": "dired.open && !findWidgetVisible && !inQuickOpen"
+  },
+  {
+    "key": "ctrl+cmd+g",
+    "command": "search.action.openEditor"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "editor.action.previousMatchFindAction",
+    "when": "findInputFocussed"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "editor.action.nextMatchFindAction",
+    "when": "findInputFocussed"
+  },
+  {
+    "key": "ctrl+cmd+`",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+x ctrl+r",
+    "command": "workbench.action.quickOpen",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "6",
+    "command": "-emacs-mcx.insertRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterInsertMode"
+  },
+  {
+    "key": "6",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.prefixArgumentExists && !emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "6",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.inRectMarkMode && !editorReadonly"
+  },
+  {
+    "key": "6",
+    "command": "-emacs-mcx.subsequentArgumentDigit",
+    "when": "editorTextFocus && emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "6",
+    "command": "-emacs-mcx.copyToRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterCopyMode"
+  },
+  {
+    "key": "2",
+    "command": "-emacs-mcx.copyToRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterCopyMode"
+  },
+  {
+    "key": "2",
+    "command": "-emacs-mcx.insertRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterInsertMode"
+  },
+  {
+    "key": "2",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.prefixArgumentExists && !emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "2",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.inRectMarkMode && !editorReadonly"
+  },
+  {
+    "key": "2",
+    "command": "-emacs-mcx.subsequentArgumentDigit",
+    "when": "editorTextFocus && emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "3",
+    "command": "-emacs-mcx.subsequentArgumentDigit",
+    "when": "editorTextFocus && emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "3",
+    "command": "-emacs-mcx.copyToRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterCopyMode"
+  },
+  {
+    "key": "3",
+    "command": "-emacs-mcx.insertRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterInsertMode"
+  },
+  {
+    "key": "3",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.prefixArgumentExists && !emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "3",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.inRectMarkMode && !editorReadonly"
+  },
+  {
+    "key": "4",
+    "command": "-emacs-mcx.subsequentArgumentDigit",
+    "when": "editorTextFocus && emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "4",
+    "command": "-emacs-mcx.copyToRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterCopyMode"
+  },
+  {
+    "key": "4",
+    "command": "-emacs-mcx.insertRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterInsertMode"
+  },
+  {
+    "key": "4",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.prefixArgumentExists && !emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "4",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.inRectMarkMode && !editorReadonly"
+  },
+  {
+    "key": "5",
+    "command": "-emacs-mcx.subsequentArgumentDigit",
+    "when": "editorTextFocus && emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "5",
+    "command": "-emacs-mcx.copyToRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterCopyMode"
+  },
+  {
+    "key": "5",
+    "command": "-emacs-mcx.insertRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterInsertMode"
+  },
+  {
+    "key": "5",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.prefixArgumentExists && !emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "5",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.inRectMarkMode && !editorReadonly"
+  },
+  {
+    "key": "7",
+    "command": "-emacs-mcx.subsequentArgumentDigit",
+    "when": "editorTextFocus && emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "7",
+    "command": "-emacs-mcx.copyToRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterCopyMode"
+  },
+  {
+    "key": "7",
+    "command": "-emacs-mcx.insertRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterInsertMode"
+  },
+  {
+    "key": "7",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.prefixArgumentExists && !emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "7",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.inRectMarkMode && !editorReadonly"
+  },
+  {
+    "key": "8",
+    "command": "-emacs-mcx.copyToRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterCopyMode"
+  },
+  {
+    "key": "8",
+    "command": "-emacs-mcx.insertRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterInsertMode"
+  },
+  {
+    "key": "8",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.prefixArgumentExists && !emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "8",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.inRectMarkMode && !editorReadonly"
+  },
+  {
+    "key": "8",
+    "command": "-emacs-mcx.subsequentArgumentDigit",
+    "when": "editorTextFocus && emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "9",
+    "command": "-emacs-mcx.subsequentArgumentDigit",
+    "when": "editorTextFocus && emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "9",
+    "command": "-emacs-mcx.copyToRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterCopyMode"
+  },
+  {
+    "key": "9",
+    "command": "-emacs-mcx.insertRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterInsertMode"
+  },
+  {
+    "key": "9",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.prefixArgumentExists && !emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "9",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.inRectMarkMode && !editorReadonly"
+  },
+  {
+    "key": "0",
+    "command": "-emacs-mcx.subsequentArgumentDigit",
+    "when": "editorTextFocus && emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "0",
+    "command": "-emacs-mcx.copyToRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterCopyMode"
+  },
+  {
+    "key": "0",
+    "command": "-emacs-mcx.insertRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterInsertMode"
+  },
+  {
+    "key": "0",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.prefixArgumentExists && !emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "0",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.inRectMarkMode && !editorReadonly"
+  },
+  {
+    "key": "1",
+    "command": "-emacs-mcx.subsequentArgumentDigit",
+    "when": "editorTextFocus && emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "1",
+    "command": "-emacs-mcx.copyToRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterCopyMode"
+  },
+  {
+    "key": "1",
+    "command": "-emacs-mcx.insertRegister",
+    "when": "editorTextFocus && emacs-mcx.inRegisterInsertMode"
+  },
+  {
+    "key": "1",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.prefixArgumentExists && !emacs-mcx.acceptingArgument"
+  },
+  {
+    "key": "1",
+    "command": "-emacs-mcx.typeChar",
+    "when": "editorTextFocus && emacs-mcx.inRectMarkMode && !editorReadonly"
+  },
+  {
+    "key": "ctrl+cmd+i",
+    "command": "-workbench.action.chat.open"
+  },
+  {
+    "key": "shift+cmd+s",
+    "command": "-workbench.action.files.saveAs"
+  },
+  {
+    "key": "cmd+k",
+    "command": "editor.action.inlineSuggest.trigger",
+    "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "alt+\\",
+    "command": "-editor.action.inlineSuggest.trigger",
+    "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-emacs-mcx.isearchBackward",
+    "when": "!findInputFocussed"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "actions.find",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "cmd+f",
+    "command": "-actions.find",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "ctrl+cmd+5",
+    "command": "editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "alt+cmd+f",
+    "command": "-editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-actions.findWithSelection"
+  },
+  {
+    "key": "ctrl+c ctrl+l",
+    "command": "urlTitle.run"
+  },
+  {
+    "key": "ctrl+alt+c",
+    "command": "-markdown.pushCodeLens",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "magit.toggle-fold",
+    "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "-workbench.action.openEditorAtIndex9"
+  },
+  {
+    "key": "ctrl+1",
+    "command": "-workbench.action.openEditorAtIndex1"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "-workbench.action.openEditorAtIndex2"
+  },
+  {
+    "key": "ctrl+3",
+    "command": "-workbench.action.openEditorAtIndex3"
+  },
+  {
+    "key": "ctrl+5",
+    "command": "-workbench.action.openEditorAtIndex5"
+  },
+  {
+    "key": "ctrl+6",
+    "command": "-workbench.action.openEditorAtIndex6"
+  },
+  {
+    "key": "ctrl+7",
+    "command": "-workbench.action.openEditorAtIndex7"
+  },
+  {
+    "key": "ctrl+8",
+    "command": "-workbench.action.openEditorAtIndex8"
+  },
+  {
+    "key": "ctrl+4",
+    "command": "-workbench.action.openEditorAtIndex4"
+  },
+  {
+    "key": "ctrl+c ctrl+o",
+    "command": "editor.action.openLink"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused && !inInteractiveInput && !interactiveEditorFocused"
+  },
+  {
+    "key": "f6",
+    "command": "-workbench.action.focusNextPart"
+  },
+  {
+    "key": "f6",
+    "command": "extension.search-online",
+    "when": "editorHasSelection"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "-extension.search-online",
+    "when": "editorHasSelection"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "-workbench.action.lastEditorInGroup"
+  },
+  {
+    "key": "cmd+m",
+    "command": "-emacs-mcx.backToIndentation",
+    "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus"
+  },
+  {
+    "key": "cmd+m",
+    "command": "-emacs-mcx.isearchExit",
+    "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorFocus && findWidgetVisible && !config.emacs-mcx.cursorMoveOnFindWidget && !isComposing && !replaceInputFocussed"
+  },
+  {
+    "key": "cmd+m",
+    "command": "-markdown.extension.editing.toggleMath",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  }
+]
