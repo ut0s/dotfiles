@@ -1,0 +1,95 @@
+# grep alias
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# some more ls aliases
+alias ls='ls --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# some more aliases
+alias sl='ls --color=auto'
+alias install='sudo apt install'
+alias reinstall='sudo apt-get install --reinstall'
+alias finstall='sudo apt -f install'
+alias update='sudo apt update'
+# alias upgrade='sudo apt dist-upgrade'
+# alias dupgrade='sudo apt update && sudo apt dist-upgrade'
+alias remove='sudo apt-get remove'
+alias autoremove='sudo apt-get autoremove'
+alias purge='sudo apt-get remove --purge'
+alias agp='sudo apt-get autoremove --purge'
+alias add='sudo add-apt-repository'
+alias search='apt-cache search'
+alias clean='sudo apt-get clean'
+alias autoclean='sudo apt-get autoclean'
+alias sinstall='sudo apt-get install --no-install-recommends'
+
+
+# User specific aliases and functions
+alias rm="rm -iv" # interactive
+alias cp="cp -iv --preserve=timestamps" # interactive, preserve timestamp
+alias mv="mv -iv" # interavtive
+# alias rsync="rsync -rlptvz" # recursive, symlinks, permission, time, verbose, compress
+alias scp="scp -Cpr" # compress, preserve
+
+alias dirsize="du -sm * > filesize_`date +%y%m%d`.txt && cat filesize_`date +%y%m%d`.txt"
+alias svn_meld="svn diff --diff-cmd meld"
+
+
+alias xclip="xclip -selection CLIPBOARD"
+
+# color output
+alias less="less -R"
+alias pcat='pygmentize -O style=native -f console256 -g'
+
+
+# move aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias cd-='cd -'
+
+# Disk size
+alias df='df -hT'
+
+# git
+alias g='git'
+alias ga='git add'
+alias gb='git branch'
+alias gd='git diff'
+alias gs='git status'
+alias gst='git status'
+alias gis='git status'
+alias gits='git status'
+alias gco='git checkout'
+alias gf='git fetch'
+alias gc='git commit'
+alias pull='git pull'
+alias push='git push'
+
+# dotfiles
+alias dots='cd ~/dotfiles'
+alias dotfiles='cd ~/dotfiles'
+
+#tmux
+alias ttmux='tmux new-session -A -s Default'
+
+#notify slack
+alias nme='bash $HOME/dotfiles/script/slack_webhook.sh'
+
+alias rm='trash-put'
+
+alias dia='emacsclient ~/til/$(date +%y%m)/log$(date +%y%m%d).org &'
+
+alias nbt='newsboat && newsboat -X'
+
+alias rng='ranger'
+
+alias rm-gtags='find . | grep -E "(GPATH|GRTAGS|GTAGS)" | xargs rm'
+alias rm-pycache='find . | grep -E "(__pycache__|\.pyc|\.pyo)" | xargs rm'
+
+alias yarn='pnpm'
+alias npm='pnpm'
