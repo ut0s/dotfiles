@@ -1,0 +1,52 @@
+{
+  "tools": {
+    "allowed": [
+      "run_shell_command(git)",
+      "run_shell_command(pnpm)",
+      "run_shell_command(mv)"
+    ],
+    "shell": {
+      "showColor": true
+    },
+    "useRipgrep": true
+  },
+  "context": {
+    "fileName": [
+      "AGENTS.md",
+      "GEMINI.md"
+    ],
+    "fileFiltering": {
+      "respectGitIgnore": false
+    },
+    "loadFromIncludeDirectories": true
+  },
+  "ui": {
+    "hideBanner": true,
+    "theme": "GitHub"
+  },
+  "model": {
+    "maxSessionTurns": 10,
+    "summarizeToolOutput": {
+      "run_shell_command": {
+        "tokenBudget": 100
+      }
+    }
+  },
+  "general": {
+    "preferredEditor": "code",
+    "vimMode": false
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "telemetry": {
+    "enabled": false,
+    "target": "local",
+    "logPrompts": true
+  },
+  "privacy": {
+    "usageStatisticsEnabled": false
+  }
+}

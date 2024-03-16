@@ -1,0 +1,84 @@
+# path setting
+# PATH=$PATH:$HOME/bin:
+# PATH=$PATH:$HOME/usr/bin/:
+# PATH=$PATH:$HOME/.local/bin:
+# PATH=$PATH:/usr/local/cuda/bin:
+# export PATH
+export PATH=${PATH}:$HOME/bin:$HOME/usr/bin/:$HOME/usr/local/bin/:$HOME/.local/bin:/usr/local/cuda/bin
+
+#python path setting
+# PYTHONPATH=$PYTHONPATH:$/usr/local/lib/python2.7/site-packages/:
+# PYTHONPATH=$PYTHONPATH:$/usr/local/lib/python2.7/dist-packages/:
+# PYTHONPATH=$PYTHONPATH:$HOME/.local/lib/python2.7/site-packages/:
+# PYTHONPATH=$PYTHONPATH:$HOME/.local/lib/python3.5/site-packages/:
+# export PYTHONPATH
+
+#python startup interactive mode
+export PYTHONSTARTUP=$HOME/.pythonstartup
+
+# if [ -d "$HOME/.local/bin" ]; then
+#     PATH="$HOME/.local/bin:$PATH"
+# fi
+
+# export LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib/:/usr/local/Aria/lib:/usr/local/cuda/lib64/
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$HOME/usr/lib/
+
+# PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/
+
+# xmodmap ~/.xmodmap
+# setxkbmap -option "ctrl:nocaps"
+
+# export BROWSER=firefox
+
+# fish
+
+if [ "$(uname)" == 'Darwin' ]; then
+  # Mac
+  ARCH=$(uname -m)
+  if [[ $ARCH == 'arm64' ]]; then
+    #    PROMPT="[a] %m:%~%# "
+    export PATH=/Users/tagashira/Library/Python/3.9/bin:$PATH
+    echo "$ARCH"
+  else
+    #    PROMPT="[x] %m:%~%# "
+    echo "$ARCH"
+  fi
+
+  export PATH=/opt/homebrew/bin:$PATH
+  export PATH=/opt/homebrew/llvm/bin:$PATH
+  export LDFLAGS="-L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib"
+  # export LDFLAGS="-L/opt/homebrew/llvm/lib"
+  # export CPPFLAGS="-I/opt/homebrew/llvm/include"
+  # export LANG=en_US
+  export LANG=ja_JP.UTF-8
+  export GEM_HOME="$HOME/.gem"
+  alias ctags=/opt/homebrew/opt/ctags/bin/ctags
+
+  # pnpm
+  export PNPM_HOME="$HOME/Library/pnpm"
+  export PATH="$PNPM_HOME:$PATH"
+
+  if [ -f ~/.bash_alias_mac ]; then
+    source ~/.bash_alias_mac
+  fi
+
+  if [ -f /opt/homebrew/etc/bash_completion ]; then
+    . /opt/homebrew/etc/bash_completion
+  fi
+
+else
+  echo ""
+fi
+
+if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+  . "$(find ~/.emacs.d/* -maxdepth 3 -name 'emacs-libvterm')"/etc/emacs-vterm-bash.sh
+fi
+
+export PYTHONDONTWRITEBYTECODE=1
+
+# Android Studio
+export ANDROID_HOME=/Volumes/KIOXIA-EXCERIA_PLUS_G3_S_Media/Library/Android/SDK
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH

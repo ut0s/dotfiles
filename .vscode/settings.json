@@ -1,0 +1,322 @@
+{
+  "settingsSync.ignoredExtensions": [
+    "ms-toolsai.vscode-jupyter-slideshow",
+    "ms-vscode-remote.remote-wsl"
+  ],
+  "emacs-mcx.strictEmacsMove": true,
+  "emacs-mcx.useMetaPrefixMacCmd": true,
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 2,
+  "editor.cursorStyle": "block",
+  "cSpell.userWords": [
+    "admob",
+    "Chartjs",
+    "chromeos",
+    "crxjs",
+    "Cupertino",
+    "datetime",
+    "deque",
+    "dotenv",
+    "endregion",
+    "fediverse",
+    "fromarray",
+    "gibo",
+    "iframes",
+    "imshow",
+    "inapp",
+    "jndex",
+    "Kofi",
+    "libc",
+    "liistener",
+    "lobste",
+    "Localstore",
+    "marugothic",
+    "mkmk",
+    "MSVC",
+    "nuxt",
+    "omnibox",
+    "otsu",
+    "Pinia",
+    "pkce",
+    "pomodoro",
+    "posthog",
+    "prefs",
+    "prosemirror",
+    "rakuten",
+    "riverpod",
+    "rustc",
+    "sidepanel",
+    "speeddial",
+    "splitn",
+    "sqflite",
+    "squircle",
+    "Supabase",
+    "syncfusion",
+    "timelapse",
+    "tiptap",
+    "unmark",
+    "upsert",
+    "Vite",
+    "Vitest",
+    "vueuse",
+    "Wakelock",
+    "websidian",
+    "worldnews"
+  ],
+  "workbench.layoutControl.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "errorLens.statusBarMessageEnabled": true,
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconSet": "letter",
+  "errorLens.gutterIconSize": "85%",
+  "errorLens.scrollbarHackEnabled": true,
+  "errorLens.statusBarColorsEnabled": true,
+  "errorLens.statusBarCommand": "copyMessage",
+  "errorLens.statusBarIconsEnabled": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.stickyScroll.enabled": true,
+  "git.autofetch": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "git.openRepositoryInParentFolders": "never",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "terminal.integrated.confirmOnExit": "always",
+  "terminal.integrated.confirmOnKill": "always",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.localEchoExcludePrograms": ["nano", "tmux"],
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.defaultLocation": "editor",
+  "glassit.alpha": 220,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.enableImages": true,
+  "vscode-edge-devtools.webhintInstallNotification": true,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "clipboard.size": 100,
+  "redhat.telemetry.enabled": false,
+  "workbench.startupEditor": "none",
+  "dart.hotReloadOnSave": "all",
+  "dart.hotReloadProgress": "statusBar",
+  "dart.flutterHotReloadOnSave": "all",
+  "magit.display-buffer-function": "same-column",
+  "errorLens.followCursor": "closestProblemMultiline",
+  "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[vue]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "grammarly.files.include": [
+    "**/readme.md",
+    "**/README.md",
+    "**/*.txt",
+    "**/COMMIT_EDITMSG",
+    "**/*.org",
+    "**/*.md"
+  ],
+  "explorer.confirmDragAndDrop": false,
+  "files.insertFinalNewline": true,
+  "vue.updateImportsOnFileMove.enabled": true,
+  "autoHide.autoHidePanel": false,
+  "editor.fontFamily": "'Google Sans Code Mono'",
+  "editor.codeLensFontFamily": "'Google Sans Code Mono'",
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "notebook.formatOnSave.enabled": true,
+  "autopep8.args": ["--indent-size=2"],
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "editor.detectIndentation": false,
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "github.copilot.chat.localeOverride": "ja",
+  "playwright.reuseBrowser": false,
+  "playwright.showTrace": true,
+  "accessibility.voice.speechLanguage": "ja-JP",
+  "lldb.suppressUpdateNotifications": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "foam.files.newNotePath": "currentDir",
+  "todo-tree.general.statusBar": "current file",
+  "todo-tree.general.tags": ["[ ]", "[x]", "#TODO", "#DONE", "#date"],
+  "todo-tree.highlights.customHighlight": {
+    "#TODO": {
+      "foreground": "#000000",
+      "iconColour": "#808080",
+      "background": "#FFFF00"
+    },
+    "#DONE": {
+      "foreground": "#000000",
+      "iconColour": "#FFFF00",
+      "background": "#808080"
+    },
+    "[ ]": {
+      "foreground": "#000000",
+      "iconColour": "#808080",
+      "background": "#FFFF00"
+    },
+    "[x]": {
+      "foreground": "#000000",
+      "iconColour": "#FFFF00",
+      "background": "#808080"
+    },
+    "#date": {
+      "foreground": "#000000",
+      "iconColour": "#00FFFF",
+      "background": "#00FFFF"
+    }
+  },
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))?\\s*($TAGS)\\b|\\b($TAGS)\\s*(//|#|<!--|;|/\\*|$)",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "foam.completion.useAlias": "whenPathDiffersFromTitle",
+  "markdown.preview.breaks": true,
+  "markdownlint.run": "onSave",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "markdownRunner.compilerOptions": {
+    "cpp": "-std=c++20 -I/opt/homebrew/include -L/opt/homebrew/lib -lbenchmark -H -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
+  },
+  "github.copilot.chat.editor.temporalContext.enabled": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "editor.inlayHints.enabled": "off",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f",
+    // "tab.activeBorder": "#FFFD9C", // 下部ボーダー
+    "tab.activeBorderTop": "#FFFD9C", // 上部ボーダー
+    "tab.activeBackground": "#FFFD9C20" // 背景色（薄く）
+  },
+  "diffEditor.wordWrap": "off",
+  "editor.guides.indentation": false,
+  "editor.guides.bracketPairs": false,
+  "search-online.Google Translate Output Language": "Japanese/日语",
+  "highlight.regexes": {
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#ffcc00",
+          "backgroundColor": "#ffcc00",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#ffcc00",
+          "color": "#1f1f1f"
+        }
+      ]
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#cc0000",
+          "backgroundColor": "#cc0000",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#cc0000",
+          "color": "#1f1f1f"
+        }
+      ]
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#00ccff",
+          "backgroundColor": "#00ccff",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#00ccff",
+          "color": "#1f1f1f"
+        }
+      ]
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#cc00cc",
+          "backgroundColor": "#cc00cc",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#cc00cc",
+          "color": "#1f1f1f"
+        }
+      ]
+    }
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "github.copilot.chat.agent.terminal.allowList": {
+    "pnpm build": true,
+    "pnpm test:run": true,
+    "pnpm format": true,
+    "pnpm lint": true,
+    "pnpm dev": true
+  },
+  "github.copilot.chat.agent.terminal.denyList": {
+    "git commit": true
+  },
+  "github.copilot.chat.agent.thinkingTool": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "ignore": true,
+    "magit": false
+  },
+  "chat.mcp.serverSampling": {
+    "Global in Code: serena": {
+      "allowedModels": [
+        "github.copilot-chat/gpt-4.1",
+        "github.copilot-chat/claude-3.7-sonnet-thought",
+        "github.copilot-chat/claude-sonnet-4",
+        "github.copilot-chat/gemini-2.5-pro",
+        "github.copilot-chat/o3-mini"
+      ]
+    }
+  },
+  "chat.tools.terminal.autoApprove": {
+    "pod": true,
+    "flutter": true,
+    "pnpm": true,
+    "rg": true
+  },
+  "git.ignoreMissingGitWarning": true,
+  "accessibility.signals.chatResponseReceived": {
+    "sound": "on"
+  },
+  "accessibility.signals.chatUserActionRequired": {
+    "sound": "on"
+  },
+  "chat.mcp.gallery.enabled": true,
+  "slidev.dev-command": "pnpm slidev ${args}",
+  "plantuml.render": "Local",
+}

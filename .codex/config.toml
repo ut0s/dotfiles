@@ -1,0 +1,29 @@
+approval_policy = "on-request"
+hide_agent_reasoning = true
+model = "gpt-5.2"
+model_reasoning_effort = "high"
+model_supports_reasoning_summaries = true
+network_access = true
+notify = [
+    "bash",
+    "notify_codex.py",
+]
+sandbox_mode = "workspace-write"
+
+[mcp_servers.playwright]
+args = ["@playwright/mcp@latest"]
+command = "npx"
+
+[mcp_servers.serena]
+args = [
+    "--from",
+    "git+https://github.com/oraios/serena",
+    "serena",
+    "start-mcp-server",
+    "--context",
+    "codex",
+]
+command = "uvx"
+
+[features]
+web_search_request = true
