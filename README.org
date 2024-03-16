@@ -1,0 +1,5 @@
+* dotfiles
+** Installation
+#+begin_src bash
+bash -c "$(curl https://raw.githubusercontent.com/ut0s/dotfiles/main/etc/init.sh)"
+#+end_src
