@@ -1,0 +1,44 @@
+[user]
+  name = Yuto Tagashira
+  email = ut0s.dev@gmail.com
+[color]
+  ui = true
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  editor = nano
+  quotepath = false
+  pager = delta
+[interactive]
+  diffFilter = delta --color-only
+[merge]
+  tool = meld
+  ff = false
+[push]
+  default = matching
+
+[pack]
+  threads = 1
+
+[alias]
+  gr = log --graph --all --format="%x09%C(cyan)%C(bold)%an%Creset%x09%C(yellow)%h%x09%Creset%C(green)%C(reverse)%d%Creset%x09%C(bold)%s"
+  st = status
+  ci = commit
+  unstage = reset HEAD --
+  br = branch
+  last = log -1 HEAD
+
+[commit]
+  template = ~/dotfiles/git/.gitmessage.txt
+[pull]
+  ff = only
+[rebase]
+  autostash = true
+[init]
+  defaultBranch = main
+[delta]
+  navigate = true
+  light = false
+[diff]
+  colorMoved = default
