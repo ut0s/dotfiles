@@ -1,0 +1,133 @@
+*.*~
+*.*#
+
+.config/fish/functions/*
+.config/fish/fishd.*
+.config/fish/completions/*.fish
+.config/fish/fishfile
+.config/fish/fish_history
+.config/fish/conf.d/
+.config/fish/fish_variables
+.config/fish/fish_plugins
+
+cloning_git/*
+
+.emacs.d/auto-save-list/*
+.emacs.d/.undohist/*
+.emacs.d/.emacs.desktop/*
+.emacs.d/.session
+.emacs.d/session.*
+.emacs.d/.recentf
+.emacs.d/.backup
+.emacs.d/tramp
+.emacs.d/semanticdb
+.emacs.d/straight
+.emacs.d/transient
+.emacs.d/url
+.emacs.d/elpa/*
+.emacs.d/.python-environments
+.emacs.d/irony/*
+.emacs.d/ac-comphist.dat
+.emacs.d/.bm-repository
+.emacs.d/.cache
+.emacs.d/bookmarks
+.emacs.d/org-roam.db
+.emacs.d/multi-compile.cache
+.emacs.d/request/
+.emacs.d/.lsp-session-v1
+.emacs.d/eshell/
+.emacs.d/elpaca/
+.emacs.d/tree-sitter/
+
+.newsboat/urls
+
+.codex/auth.json
+.codex/log/*.log
+.codex/sessions/*
+.codex/history.jsonl
+.codex/version.json
+
+.gemini/google_account*
+.gemini/tmp/*
+.gemini/google_account_id
+.gemini/google_accounts.json
+.gemini/installation_id
+.gemini/oauth_creds.json
+.gemini/user_id
+
+
+### https://raw.github.com/github/gitignore/f908e51bcf38ae5ede449c55189a7b25d8c507cc/Global/Emacs.gitignore
+
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# flymake-mode
+*_flymake.*
+
+# eshell files
+/eshell/history
+/eshell/lastdir
+
+# reftex files
+*.rel
+
+# AUCTeX auto folder
+/auto/
+
+# cask packages
+.cask/
+dist/
+
+# Flycheck
+flycheck_*.el
+
+# server auth directory
+/server/
+
+# projectiles files
+.projectile
+
+# directory configuration
+.dir-locals.el
+
+# network security
+.emacs.d/network-security.data
+
+### https://raw.github.com/github/gitignore/218a941be92679ce67d0484547e3e142b2f5f6f0/Global/macOS.gitignore
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
