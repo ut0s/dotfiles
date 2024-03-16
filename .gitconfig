@@ -10,7 +10,7 @@
   editor = nano
   quotepath = false
   pager = delta
-  excludesfile = /Users/tagashira/.gitignore_global
+  excludesfile = ~/.gitignore_global
   ignorecase = false
 # [interactive]
 #   diffFilter = delta --color-only
@@ -37,6 +37,7 @@
   template = ~/dotfiles/git/.gitmessage.txt
 [pull]
   ff = only
+	rebase = true
 [rebase]
   autostash = true
 [init]
