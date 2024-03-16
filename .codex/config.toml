@@ -1,0 +1,54 @@
+approval_policy = "on-request"
+hide_agent_reasoning = true
+model = "gpt-5.6-sol"
+model_reasoning_effort = "high"
+model_supports_reasoning_summaries = true
+network_access = true
+sandbox_mode = "workspace-write"
+personality = "pragmatic"
+web_search = "live"
+approvals_reviewer = "user"
+notify = [ "/Users/ut0s/dotfiles/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended", "--previous-notify", "[\"python3\",\"\\/Users\\/ut0s\\/dotfiles\\/bin\\/notify_codex.py\"]" ]
+
+[features]
+hooks = true
+workspace_dependencies = false
+js_repl = false
+memories = true
+
+[tui]
+status_line = [ "current-dir", "project-root", "git-branch", "model-with-reasoning", "context-used", "five-hour-limit", "weekly-limit" ]
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
+
+[[hooks.UserPromptSubmit]]
+[[hooks.UserPromptSubmit.hooks]]
+type = "command"
+command = "python3 /Users/ut0s/dotfiles/bin/notify_codex.py"
+timeout = 5
+
+[[hooks.PostToolUse]]
+matcher = "*"
+
+[[hooks.PostToolUse.hooks]]
+type = "command"
+command = "python3 /Users/ut0s/dotfiles/bin/notify_codex.py"
+timeout = 5
+
+[[hooks.PermissionRequest]]
+matcher = "*"
+
+[[hooks.PermissionRequest.hooks]]
+type = "command"
+command = "python3 /Users/ut0s/dotfiles/bin/notify_codex.py"
+timeout = 5
+
+[[hooks.Stop]]
+[[hooks.Stop.hooks]]
+type = "command"
+command = "python3 /Users/ut0s/dotfiles/bin/notify_codex.py"
+timeout = 5
+
+[plugins."github@openai-curated"]
+enabled = true
