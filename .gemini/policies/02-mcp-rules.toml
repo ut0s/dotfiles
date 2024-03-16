@@ -1,0 +1,4 @@
+[[rule]]
+mcpName = "pencil"
+decision = "allow"
+priority = 80

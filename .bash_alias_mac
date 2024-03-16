@@ -1,0 +1,87 @@
+# grep alias
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# some more ls aliases
+alias ls='gls --color=auto'
+alias ll='gls -alF --color=auto'
+alias la='gls -A --color=auto'
+alias l='gls -CF --color=auto'
+
+# some more aliases
+alias sl='gls --color=auto'
+alias install='brew -v install'
+alias reinstall='brew -v reinstall'
+alias update='brew -v update'
+# alias upgrade='brew -v upgrade'
+# alias remove='sudo apt-get remove'
+# alias autoremove='sudo apt-get autoremove'
+# alias purge='sudo apt-get remove --purge'
+# alias agp='sudo apt-get autoremove --purge'
+# alias add='sudo add-apt-repository'
+# alias search='apt-cache search'
+# alias clean='sudo apt-get clean'
+# alias autoclean='sudo apt-get autoclean'
+# alias sinstall='sudo apt-get install --no-install-recommends'
+
+
+# User specific aliases and functions
+alias rm="rm -iv" # interactive
+alias cp="cp -iv" # interactive, preserve timestamp
+alias mv="mv -iv" # interavtive
+# alias rsync="rsync -rlptvz" # recursive, symlinks, permission, time, verbose, compress
+alias scp="scp -Cpr" # compress, preserve
+
+alias dirsize="du -sm * > filesize_`date +%y%m%d`.txt && cat filesize_`date +%y%m%d`.txt"
+
+alias xclip="xclip -selection CLIPBOARD"
+
+# color output
+alias less="less -R"
+alias pcat='pygmentize -O style=native -f console256 -g'
+
+
+# move aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias cd-='cd -'
+
+# Disk size
+alias df='df -hT'
+
+# git
+alias g='git'
+alias ga='git add'
+alias gb='git branch'
+alias gd='git diff'
+alias gs='git status'
+alias gst='git status'
+alias gis='git status'
+alias gits='git status'
+alias gco='git checkout'
+alias gf='git fetch'
+alias gc='git commit'
+alias pull='git pull'
+alias push='git push'
+
+# dotfiles
+alias dots='cd ~/dotfiles'
+alias dotfiles='cd ~/dotfiles'
+
+#tmux
+alias ttmux='tmux new-session -A -s Default'
+
+#notify slack
+alias nme='bash $HOME/dotfiles/script/slack_webhook.sh'
+
+alias rm='trash-put'
+
+alias dia='emacsclient ~/til/$(date +%y%m)/log$(date +%y%m%d).org &'
+
+alias nbt='newsboat -l'
+
+alias rng='ranger'
+
+alias google-chrome='open /Applications/Google\ Chrome.app'

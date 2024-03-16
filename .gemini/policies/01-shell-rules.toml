@@ -1,0 +1,11 @@
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["mv", "npm", "npx", "rm"]
+decision = "deny"
+priority = 100
+
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["afplay", "cmake", "find", "git", "grep", "ls", "ni", "nlx", "nr", "osascript", "rg"]
+decision = "allow"
+priority = 80

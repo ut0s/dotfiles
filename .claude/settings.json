@@ -1,0 +1,94 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/ut0s/.claude/statusline-command.sh"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(CI=true nr build)",
+      "Bash(CI=true pnpm -F @origantt/parser test)",
+      "Bash(cat:*)",
+      "Bash(diff:*)",
+      "Bash(echo:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(head:*)",
+      "Bash(ls:*)",
+      "Bash(nr:*)",
+      "Bash(playwright-cli:*)",
+      "Bash(sed:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:monday.com)",
+      "WebFetch(domain:plantuml.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:stackby.com)",
+      "WebFetch(domain:support.monday.com)",
+      "WebFetch(domain:work-management.org)",
+      "WebSearch",
+      "mcp__pencil"
+    ],
+    "defaultMode": "default"
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/ut0s/dotfiles/bin/notify_claude.py"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/ut0s/dotfiles/bin/notify_claude.py"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/ut0s/dotfiles/bin/notify_claude.py"
+          },
+          {
+            "type": "command",
+            "command": "tmux set-option -p @claude_pane_label '' 2>/dev/null || true"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/ut0s/dotfiles/bin/notify_claude.py"
+          }
+        ]
+      },
+      {
+        "matcher": "idle_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/ut0s/dotfiles/bin/notify_claude.py"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true
+  }
+}
