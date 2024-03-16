@@ -1,0 +1,5 @@
+[[rule]]
+toolName = "*"
+mcpName = "pencil"
+decision = "allow"
+priority = 80

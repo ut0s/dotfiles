@@ -1,0 +1,62 @@
+{
+  "ide": {
+    "hasSeenNudge": true,
+    "enabled": true
+  },
+  "tools": {
+    "shell": {
+      "showColor": true
+    },
+    "useRipgrep": true
+  },
+  "context": {
+    "fileName": [
+      "AGENTS.md",
+      "GEMINI.md"
+    ],
+    "fileFiltering": {
+      "respectGitIgnore": false
+    },
+    "loadFromIncludeDirectories": true
+  },
+  "ui": {
+    "hideBanner": true,
+    "theme": "GitHub",
+    "footer": {
+      "hideModelInfo": false,
+      "showLabels": true
+    }
+  },
+  "model": {
+    "maxSessionTurns": 1000,
+    "summarizeToolOutput": {
+      "run_shell_command": {
+        "tokenBudget": 100
+      }
+    }
+  },
+  "general": {
+    "preferredEditor": "emacs",
+    "vimMode": false,
+    "previewFeatures": true,
+    "enablePromptCompletion": true,
+    "sessionRetention": {
+      "enabled": true,
+      "maxAge": "30d",
+      "warningAcknowledged": true
+    }
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "telemetry": {
+    "enabled": false,
+    "target": "local",
+    "logPrompts": true
+  },
+  "privacy": {
+    "usageStatisticsEnabled": false
+  }
+}

@@ -1,0 +1,49 @@
+approval_policy = "on-request"
+hide_agent_reasoning = true
+model = "gpt-5.5"
+model_reasoning_effort = "high"
+model_supports_reasoning_summaries = true
+network_access = true
+notify = [ "python3", "/Users/ut0s/dotfiles/bin/notify_codex.py" ]
+sandbox_mode = "workspace-write"
+personality = "pragmatic"
+web_search = "live"
+approvals_reviewer = "user"
+
+[features]
+hooks = true
+workspace_dependencies = false
+
+[tui]
+status_line = [ "current-dir", "project-root", "git-branch", "model-with-reasoning", "context-used", "five-hour-limit", "weekly-limit" ]
+
+[[hooks.UserPromptSubmit]]
+[[hooks.UserPromptSubmit.hooks]]
+type = "command"
+command = "python3 /Users/ut0s/dotfiles/bin/notify_codex.py"
+timeout = 5
+
+[[hooks.PostToolUse]]
+matcher = "*"
+
+[[hooks.PostToolUse.hooks]]
+type = "command"
+command = "python3 /Users/ut0s/dotfiles/bin/notify_codex.py"
+timeout = 5
+
+[[hooks.PermissionRequest]]
+matcher = "*"
+
+[[hooks.PermissionRequest.hooks]]
+type = "command"
+command = "python3 /Users/ut0s/dotfiles/bin/notify_codex.py"
+timeout = 5
+
+[[hooks.Stop]]
+[[hooks.Stop.hooks]]
+type = "command"
+command = "python3 /Users/ut0s/dotfiles/bin/notify_codex.py"
+timeout = 5
+
+[plugins."github@openai-curated"]
+enabled = true

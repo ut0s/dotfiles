@@ -1,0 +1,13 @@
+version = 1
+id = "arxiv"
+kind = "cron"
+name = "arXiv論文ウォッチャー"
+prompt = "- 機械学習\n- 経済\n- 画像認識\n- 自動運転技術\nの最新論文について簡単にポイントを3行でまとめて紹介してほしいです\n論文毎にまとめてください\n\nDiscordのWebHookに変更内容をまとめて、完了通知を飛ばしてください"
+status = "ACTIVE"
+rrule = "RRULE:FREQ=WEEKLY;BYHOUR=9;BYMINUTE=0;BYDAY=TU"
+model = "gpt-5.4"
+reasoning_effort = "medium"
+execution_environment = "local"
+cwds = ["/Users/ut0s/Documents/Playground"]
+created_at = 1774662860192
+updated_at = 1774668162970
