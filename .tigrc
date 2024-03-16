@@ -1,0 +1,26 @@
+# tab size
+set tab-size = 2
+
+# ignore whitespac
+set ignore-space = all
+
+####### emacs keymap #########
+bind diff <Ctrl-p> move-up
+bind diff <Ctrl-n> move-down
+
+# unbind move-page-down/up
+bind generic <PageDown> none
+bind generic <Ctrl-D> none
+bind generic <Space> none
+bind generic <PageUp> none
+bind generic <Ctrl-U> none
+
+# set C-v,M-v move-page-down/up
+bind generic <Ctrl-v> move-page-down
+bind generic <Esc>v move-page-up
+
+# set M-<,M-> move-first/last-line
+bind generic <Home> move-first-line
+bind generic <End> move-last-line
+bind generic <Esc>< move-first-line
+bind generic <Esc>> move-last-line

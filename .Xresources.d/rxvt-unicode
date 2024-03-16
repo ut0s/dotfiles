@@ -1,0 +1,97 @@
+!! Font list and Spacing
+URxvt.font:                 xft:DejaVu Sans Mono for Powerline:pixelsize=13,\
+                            xft:IPAGothic
+! URxvt.boldFont:             xft:DejaVu Sans Mono Bold for Powerline:pixelsize=13
+! URxvt.italicFont:           xft:DejaVu Sans Mono Oblique for Powerline:pixelsize=13
+! URxvt.boldItalicFont:       xft:DejaVu Sans Mono Bold Oblique for Powerline:pixelsize=13
+URxvt.letterSpace:          -1
+!URxvt.lineSpace:            0
+
+URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.transparent:          true
+! URxvt.fading:               40
+URxvt.urgentOnBell:         false
+URxvt.visualBell:           true
+! URxvt.loginShell:           true
+URxvt.saveLines:            5000
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+
+! Scrollbar
+URxvt.scrollBar:            false
+URxvt.scrollBar_right:      false
+URxvt.scrollBar_floating:   false
+URxvt.scrollstyle:          plain
+
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
+! Cursor
+URxvt.cursorBlink:          true
+URxvt.cursorColor:          #657b83
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+! Perl extensions
+URxvt.perl-ext-common:      default,matcher,selection-to-clipboard,resize-font,tabbed
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! matcher
+URxvt.matcher.launcher: xdg-open
+URxvt.matcher.button: 1
+URxvt.keysym.M-u: matcher:select
+URxvt.keysym.M-U: matcher:list
+URxvt.keysym.M-o: matcher:last
+
+! selection-to-clipboard
+URxvt.keysym.Shift-Control-V: perl:clipboard-to-clipboard:paste
+! URxvt.keysym.C-M-: perl:clipboard-to-clipboard:copy
+
+! resize font
+URxvt.resize-font.step: 1
+URxvt.keysym.C-0:    resize-font:reset
+
+! tabbed (https://github.com/gryf/tabbed)
+URxvt.tabbed.tabbar-fg: 8
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg:    15
+URxvt.tabbed.tab-bg:    8
+URxvt.tabbed.tab-numbers: true
+URxvt.tabbed.new-button: false
+
+
+! Color
+*fading: 40
+*cursorColor: #93a1a1
+
+!! color scheme and opacity - gruvbox-dark https://github.com/morhetz/gruvbox
+URxvt.color0:      [95]#282828    /* black          */
+URxvt.color1:      [95]#cc241d    /* red            */
+URxvt.color2:      [95]#98971a    /* green          */
+URxvt.color3:      [95]#d79921    /* yellow         */
+URxvt.color4:      [95]#458588    /* blue           */
+URxvt.color5:      [95]#b16286    /* magenta        */
+URxvt.color6:      [95]#689d6a    /* cyan           */
+URxvt.color7:      [95]#a89984    /* white          */
+URxvt.color8:      [95]#928374    /* bright black   */
+URxvt.color9:      [95]#fb4934    /* bright red     */
+URxvt.color10:     [95]#b8bb26    /* bright green   */
+URxvt.color11:     [95]#fabd2f    /* bright yellow  */
+URxvt.color12:     [95]#83a598    /* bright blue    */
+URxvt.color13:     [95]#d3869b    /* bright magenta */
+URxvt.color14:     [95]#8ec07c    /* bright cyan    */
+URxvt.color15:     [95]#ebdbb2    /* bright white   */
+URxvt.foreground:  [95]#ebdbb2
+URxvt.background:  [65]#282828
+URxvt.colorIT:     [95]#8ec07c
+URxvt.colorBD:     [95]#fe8019
+URxvt.colorUL:     [95]#83a598
+
+! change to solid background
+URxvt.keysym.Control-Shift-F9: command:\033]11;[65]#282828\007
+! change to transparent background
+URxvt.keysym.Control-Shift-F10: command:\033]11;#282828\007

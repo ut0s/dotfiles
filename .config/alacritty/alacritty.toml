@@ -1,0 +1,65 @@
+[general]
+live_config_reload = true
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "DeJavu Sans Mono for Powerline"
+style = "Bold"
+
+[font.normal]
+family = "DeJavu Sans Mono for Powerline"
+style = "Book"
+
+[font.italic]
+family = "DeJavu Sans Mono for Powerline"
+style = "Oblique"
+
+[font.bold_italic]
+family = "DeJavu Sans Mono for Powerline"
+style = "Bold Oblique"
+
+[window]
+padding = { x = 5, y = 0 }
+dynamic_padding = true
+# decorations = "None"
+opacity = 0.8
+startup_mode = "Windowed"
+option_as_alt = "Both"
+
+[scrolling]
+history = 100000
+
+# [bell]
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+# style = { shape = "Block", blinking = "On" }
+# shape = "Block"
+# blinking = "On"
+
+[terminal]
+osc52 = "CopyPaste"
+
+[mouse]
+hide_when_typing = false
+
+[keyboard]
+bindings = [
+   # change font size
+   { key = "+", mods = "Control|Shift", action = "IncreaseFontSize" },
+   { key = "-", mods = "Control|Shift", action = "DecreaseFontSize" },
+   { key = "_", mods = "Control|Shift", action = "DecreaseFontSize" },
+   { key = "0", mods = "Control", action = "ResetFontSize" },
+   { key = "Tab", mods = "Control", action = "SelectNextTab" },
+   { key = "Tab", mods = "Control|Shift", action = "SelectPreviousTab" },
+   { key = "W", mods = "Command" , action = "None" }
+]
+
+[debug]
+# render_timer = true
+# persistent_logging = true
+# print_events = true

@@ -1,0 +1,1 @@
+/Users/ut0s/dotfiles/agents/AGENTS.md

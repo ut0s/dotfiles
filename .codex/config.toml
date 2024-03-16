@@ -1,0 +1,183 @@
+approval_policy = "on-request"
+hide_agent_reasoning = true
+model = "gpt-5.6-sol"
+model_reasoning_effort = "medium"
+sandbox_mode = "workspace-write"
+personality = "pragmatic"
+web_search = "live"
+approvals_reviewer = "auto_review"
+
+notify = [ "/Users/ut0s/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended" ]
+
+[features]
+hooks = true
+workspace_dependencies = false
+js_repl = false
+memories = true
+
+[tui]
+status_line = [ "current-dir", "project-root", "git-branch", "model-with-reasoning", "context-used", "five-hour-limit", "weekly-limit" ]
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
+"gpt-5.6-sol" = 1
+gpt-6-astra = 2
+
+[hooks.state]
+
+[plugins."documents@openai-primary-runtime"]
+enabled = false
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = false
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = false
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."sites@openai-bundled"]
+enabled = false
+
+[plugins."visualize@openai-bundled"]
+enabled = false
+
+[mcp_servers.node_repl]
+args = []
+command = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node_repl"
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = "/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+NODE_REPL_NODE_PATH = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node"
+NODE_REPL_TRUSTED_CODE_PATHS = "/Users/ut0s/.codex:/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+CODEX_HOME = "/Users/ut0s/.codex"
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "323bc3e687e17d7e377238d9f4c69111c4d0e6219103b6316d8c52082489533b"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
+NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = "Control desktop apps on macOS through Computer Use."
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.803.41515"
+SKY_CUA_SERVICE_PATH = "/Users/ut0s/.codex/computer-use/Codex Computer Use.app"
+CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex"
+
+[mcp_servers.pencil]
+command = "/Applications/Pencil.app/Contents/Resources/app.asar.unpacked/out/mcp-server-darwin-arm64"
+args = [ "--app", "desktop", "--agent", "codexCLI" ]
+enabled = false
+
+[mcp_servers.cua_repl]
+command = "/Applications/Codex.app/Contents/MacOS/ChatGPT"
+enabled = false
+
+[mcp_servers.computer-use]
+command = "./Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient"
+args = ["mcp"]
+cwd = "."
+enabled = false
+
+[marketplaces.openai-bundled]
+last_updated = "2026-08-26T16:13:20Z"
+source_type = "local"
+source = "/Users/ut0s/dotfiles/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-04-30T23:09:13Z"
+source_type = "local"
+source = "/Volumes/KIOXIA-EXCERIA_PLUS_G3_S_Media/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+
+
+[desktop]
+appearanceTheme = "system"
+appearanceLightCodeThemeId = "codex"
+appearanceDarkCodeThemeId = "codex"
+codeFontSize = 13
+mac-menu-bar-enabled = true
+followUpQueueMode = "steer"
+localeOverride = "en-US"
+notifications-turn-mode = "always"
+keepRemoteControlAwakeWhilePluggedIn = false
+show-context-window-usage = true
+dock-icon-preference = "codex-system"
+dictationDictionary = []
+conversationDetailMode = "STEPS_COMMANDS"
+avatar-overlay-mascot-width-px = 80
+realtimeVoiceScreenContextEnabled = true
+open-link-in-target-preference = "external-browser"
+composerEnterBehavior = "enter"
+composerPlainTextMode = true
+browser-show-full-url = true
+enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "persistent"]
+
+[desktop.appearanceLightChromeTheme]
+accent = "#0169cc"
+contrast = 80
+ink = "#0d0d0d"
+opaqueWindows = false
+surface = "#ffffff"
+
+[desktop.appearanceLightChromeTheme.fonts]
+[desktop.appearanceLightChromeTheme.semanticColors]
+diffAdded = "#00a240"
+diffRemoved = "#e02e2a"
+skill = "#751ed9"
+
+[desktop.appearanceDarkChromeTheme]
+accent = "#0169cc"
+contrast = 60
+ink = "#fcfcfc"
+opaqueWindows = false
+surface = "#111111"
+
+[desktop.appearanceDarkChromeTheme.fonts]
+[desktop.appearanceDarkChromeTheme.semanticColors]
+diffAdded = "#00a240"
+diffRemoved = "#e02e2a"
+skill = "#b06dff"
+
+[desktop.open-in-target-preferences]
+global = "vscode"
+
+[desktop.open-in-target-preferences.perPath]
+"/Volumes/KIOXIA-EXCERIA_PLUS_G3_S_Media/repos/blog" = "vscode"
+
+[memories]
+generate_memories = true
+use_memories = true
+
+[apps.connector_openai_codex_document_control]
+enabled = false
+
+[apps.connector_20205bf7d4e99a89d7154bb849718324]
+enabled = false
+
+[apps.connector_openai_plugin_management]
+enabled = false
+
+[apps.connector_openai_hotline]
+enabled = false
+
+[apps.connector_openai_safety_settings]
+enabled = false
+
+[[skills.config]]
+path = "/Users/ut0s/.agents/skills/find-skills/SKILL.md"
+enabled = false
+
+[shell_environment_policy.set]
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "323bc3e687e17d7e377238d9f4c69111c4d0e6219103b6316d8c52082489533b"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_TRUSTED_CODE_PATHS = "/Users/ut0s/.codex:/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+
+[notice]
+hide_rate_limit_model_nudge = true
+
+[sandbox_workspace_write]
+writable_roots = ["/Users/ut0s/.agents/skills/agmsg/db", "/Users/ut0s/.agents/skills/agmsg/teams", "/Users/ut0s/.agents/skills/agmsg/run"]
+network_access = true

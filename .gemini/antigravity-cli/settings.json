@@ -1,0 +1,34 @@
+{
+  "artifactReviewPolicy": "always-proceed",
+  "colorScheme": "tokyo night",
+  "model": "Gemini 4 Hydrogen (Medium)",
+  "notifications": true,
+  "permissions": {
+    "allow": [
+      "command(cat)",
+      "command(ls)",
+      "command(grep)",
+      "command(git status)",
+      "command(git diff)",
+      "command(head)",
+      "command(tail)",
+      "command(find)",
+      "command(git add)",
+      "command(diff)",
+      "command(git show)"
+    ],
+    "deny": [
+      "command(git push)"
+    ]
+  },
+  "runningLightSpeed": "slow",
+  "showFeedbackSurvey": false,
+  "showTips": false,
+  "statusLine": {
+    "type": "",
+    "command": "",
+    "enabled": true
+  },
+  "toolPermission": "always-proceed",
+  "verbosity": "low"
+}

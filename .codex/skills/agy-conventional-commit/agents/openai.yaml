@@ -1,0 +1,4 @@
+interface:
+  display_name: "AGY Conventional Commit"
+  short_description: "Antigravity CLIで安全にConventional Commitを作成"
+  default_prompt: "Use $agy-conventional-commit to inspect the current changes and create one English Conventional Commit without pushing."

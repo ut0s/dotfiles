@@ -1,0 +1,49 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(CI=true nr build)",
+      "Bash(CI=true pnpm -F @origantt/parser test)",
+      "Bash(cat:*)",
+      "Bash(diff:*)",
+      "Bash(echo:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(head:*)",
+      "Bash(ls:*)",
+      "Bash(nr:*)",
+      "Bash(playwright-cli:*)",
+      "Bash(sed:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:monday.com)",
+      "WebFetch(domain:plantuml.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:stackby.com)",
+      "WebFetch(domain:support.monday.com)",
+      "WebFetch(domain:work-management.org)",
+      "WebSearch",
+      "mcp__pencil"
+    ],
+    "defaultMode": "auto"
+  },
+  "model": "opus",
+  "hooks": {},
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/ut0s/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true
+  },
+  "effortLevel": "high",
+  "modelSettings": {
+    "claude-opus-4-5": {
+      "effortLevel": "high"
+    }
+  },
+  "tui": "fullscreen",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark-ansi",
+  "remoteControlAtStartup": true,
+  "agentPushNotifEnabled": true
+}
