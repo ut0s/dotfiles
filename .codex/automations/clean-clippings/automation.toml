@@ -1,0 +1,13 @@
+version = 1
+id = "clean-clippings"
+kind = "cron"
+name = "Clean Clippings"
+prompt = "Clippings/ 配下の Markdown ファイルを確認し、内容に応じて resource/ 配下の既存カテゴリへ移動する。ファイル名は AGENTS.md の命名規則に従い、英語の簡潔な snake_case に正規化し、参照元サイトが分かる場合は先頭にサービス名を付ける。inbox、resource/kindle、project の命名は変更しない。分類先が曖昧な場合は resource/bookmark に配置する。\n\nDiscordのWebHookに変更内容をまとめて、完了通知を飛ばしてください"
+status = "ACTIVE"
+rrule = "RRULE:FREQ=WEEKLY;BYHOUR=6;BYMINUTE=0;BYDAY=MO"
+model = "gpt-5.4"
+reasoning_effort = "medium"
+execution_environment = "local"
+cwds = ["/Users/ut0s/Library/CloudStorage/Dropbox/DEV/obsidian"]
+created_at = 1774606778208
+updated_at = 1774668157986

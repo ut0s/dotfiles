@@ -1,0 +1,40 @@
+# Approximation of .config/alacritty/alacritty.toml for Ghostty.
+
+font-family = "DeJavu Sans Mono for Powerline"
+font-style = "Book"
+font-style-bold = "Bold"
+font-style-italic = "Oblique"
+font-style-bold-italic = "Bold Oblique"
+font-size = 13
+
+window-padding-x = 5
+window-padding-y = 0
+window-padding-balance = true
+background-opacity = 0.75
+
+# "Both" in Alacritty maps to treating both Option keys as Alt on macOS.
+macos-option-as-alt = true
+
+# Ghostty uses a byte limit rather than line count for scrollback history.
+scrollback-limit = 50000000
+
+copy-on-select = clipboard
+clipboard-read = allow
+clipboard-write = allow
+mouse-hide-while-typing = false
+
+keybind = ctrl+shift+equal=increase_font_size:1
+keybind = ctrl+shift+plus=increase_font_size:1
+keybind = ctrl+minus=decrease_font_size:1
+keybind = ctrl+shift+minus=decrease_font_size:1
+keybind = ctrl+digit0=reset_font_size
+keybind = ctrl+tab=next_tab
+keybind = ctrl+shift+tab=previous_tab
+keybind = super+enter=ignore
+keybind = super+d=ignore
+keybind = super+shift+d=ignore
+keybind = super+shift+enter=ignore
+
+# On macOS, app menu shortcuts may still take precedence over keybind remaps.
+keybind = super+key_t=ignore
+keybind = super+key_w=ignore

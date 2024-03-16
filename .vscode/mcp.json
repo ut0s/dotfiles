@@ -1,0 +1,114 @@
+{
+	"inputs": [
+		{
+			"id": "browser_url",
+			"type": "promptString",
+			"description": "Optional: connect to an already-running Chrome (remote debugging / port-forward). Example: http://127.0.0.1:9222",
+			"password": false
+		},
+		{
+			"id": "headless",
+			"type": "promptString",
+			"description": "Run Chrome headless (true/false). Default: false",
+			"password": false
+		},
+		{
+			"id": "chrome_executable_path",
+			"type": "promptString",
+			"description": "Path to a specific Chrome/Chromium binary.",
+			"password": false
+		},
+		{
+			"id": "isolated",
+			"type": "promptString",
+			"description": "Use a temporary user-data-dir (true/false). Default: false",
+			"password": false
+		},
+		{
+			"id": "chrome_channel",
+			"type": "promptString",
+			"description": "Chrome channel: stable | canary | beta | dev (default: stable).",
+			"password": false
+		},
+		{
+			"id": "context7_api_key",
+			"type": "promptString",
+			"description": "Context7 API key (optional; increases rate limits). Get one at https://context7.com/dashboard",
+			"password": true
+		},
+		{
+			"id": "Authorization",
+			"type": "promptString",
+			"description": "Authentication token (PAT or App token)",
+			"password": true
+		},
+		{
+			"id": "CONTEXT7_API_KEY",
+			"type": "promptString",
+			"description": "API key for authentication",
+			"password": true
+		},
+		{
+			"id": "api_key",
+			"type": "promptString",
+			"description": "your API key",
+			"password": true
+		},
+		{
+			"id": "project-ref",
+			"type": "promptString",
+			"description": "Supabase project reference ID",
+			"password": false
+		},
+		{
+			"id": "read-only",
+			"type": "promptString",
+			"description": "Enable read-only mode",
+			"password": false
+		},
+		{
+			"id": "features",
+			"type": "promptString",
+			"description": "Comma-separated list of features to enable",
+			"password": false
+		},
+		{
+			"id": "api-url",
+			"type": "promptString",
+			"description": "Custom API URL",
+			"password": false
+		},
+		{
+			"id": "SUPABASE_ACCESS_TOKEN",
+			"type": "promptString",
+			"description": "Personal access token for Supabase API",
+			"password": true
+		}
+	],
+	"servers": {
+		"io.github.github/github-mcp-server": {
+			"type": "http",
+			"url": "https://api.githubcopilot.com/mcp/",
+			"headers": {
+				"Authorization": "${input:Authorization}"
+			},
+			"gallery": "https://api.mcp.github.com",
+			"version": "0.26.2"
+		},
+		"oraios/serena": {
+			"type": "stdio",
+			"command": "uvx",
+			"args": [
+				"--from",
+				"git+https://github.com/oraios/serena",
+				"serena",
+				"start-mcp-server",
+				"serena==latest",
+				"--context",
+				"ide-assistant"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.0"
+		}
+	}
+}

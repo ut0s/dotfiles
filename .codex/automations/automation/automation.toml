@@ -1,0 +1,13 @@
+version = 1
+id = "automation"
+kind = "cron"
+name = "天気"
+prompt = "愛知県岡崎市の天気予報を毎朝Discordに投稿してください。\n\nDiscord の WebHook には次の形式で投稿してください。変更内容まとめは不要です。\n\n3月29日(日) 岡崎市\n天気: 晴れ時々くもり\n気温: 最高24℃ / 最低12℃\n**降水: 午後ににわか雨の可能性**\n\n実際の投稿では日付、天気、気温、降水をその日の予報で置き換えてください。降水の行だけ Markdown の太字にしてください。"
+status = "ACTIVE"
+rrule = "RRULE:FREQ=WEEKLY;BYHOUR=7;BYMINUTE=0;BYDAY=SU,MO,TU,WE,TH,FR,SA"
+model = "gpt-5.4"
+reasoning_effort = "low"
+execution_environment = "local"
+cwds = ["/Users/ut0s/Documents/Playground"]
+created_at = 1774662650580
+updated_at = 1774668153213

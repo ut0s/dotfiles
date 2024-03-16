@@ -1,0 +1,21 @@
+approval_policy = "on-request"
+hide_agent_reasoning = true
+model = "gpt-5.4"
+model_reasoning_effort = "medium"
+model_supports_reasoning_summaries = true
+network_access = true
+notify = [ "bash", "notify_codex.py" ]
+sandbox_mode = "workspace-write"
+personality = "pragmatic"
+web_search = "live"
+
+[notice.model_migrations]
+"gpt-5.1-codex-mini" = "gpt-5.2-codex"
+"gpt-5.3-codex" = "gpt-5.4"
+
+[projects."/Volumes/KIOXIA-EXCERIA_PLUS_G3_S_Media/repos/blog"]
+[tui]
+status_line = ["current-dir", "project-root", "git-branch", "model-with-reasoning", "model-name", "context-used", "context-remaining", "used-tokens", "total-input-tokens", "total-output-tokens", "five-hour-limit", "weekly-limit"]
+
+[plugins."github@openai-curated"]
+enabled = true
