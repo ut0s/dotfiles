@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: for(auto e : array)
+# key: fori
+# --
+for(auto e : ${1:array}){
+  cout << e << endl;
+  $0
+}

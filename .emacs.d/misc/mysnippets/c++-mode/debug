@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: output for debug
+# key: debug
+# --
+cout << "(L:" << __LINE__ << ")" << " DEBUG: $0" << endl;

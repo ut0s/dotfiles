@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: image with caption
+# key: img
+# --
+#+CAPTION: ${1:This is the caption for the next figure link (or table)}
+#+NAME:   ${2:fig:SED-HR4049}
+[[${3:path to image}]]
+$0

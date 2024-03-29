@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: src code block cpp
+# key: src
+# --
+#+NAME: ${1:name}
+#+BEGIN_SRC C++ :results scalar :exports both :flags "-std=c++11"
+$0
+#+END_SRC

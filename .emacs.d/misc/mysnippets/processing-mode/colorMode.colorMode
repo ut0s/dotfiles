@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: colorMode
+# key: colorMode
+# --
+colorMode(${mode},${range});

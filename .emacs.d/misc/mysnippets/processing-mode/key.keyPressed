@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: key
+# --
+void keyPressed(){
+  $1
+}
+

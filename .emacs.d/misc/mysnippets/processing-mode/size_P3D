@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: size_P3D
+# key: size
+# --
+size(${1:512},${2:512},${3:P3D});

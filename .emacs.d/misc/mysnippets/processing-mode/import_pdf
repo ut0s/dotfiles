@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: import pdf
+# key: import
+# --
+import processing.pdf.*;
+
+${4:// size(${1:512}, ${2:512},PDF,"${3:PDF_FILENAME}.pdf");}

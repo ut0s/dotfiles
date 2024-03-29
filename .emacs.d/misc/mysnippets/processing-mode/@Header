@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Header comment
+# key: @head
+# --
+/// Time-stamp: <2018-02-03 19:05:15 tagashira>
+/// @file
+/// @brief
