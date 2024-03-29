@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: solarized dark
+# key: css
+# --
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-dark.min.css" />
+$0

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Header comment
+# key: @head
+# --
+// Time-stamp: <2018-02-03 17:15:51 tagashira>
+// @file
+// @brief rotating Linked 3D Object.

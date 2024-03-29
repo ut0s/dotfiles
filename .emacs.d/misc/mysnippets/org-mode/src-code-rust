@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: src code block for Rust
+# key: src
+# --
+#+NAME: ${1:name}
+#+BEGIN_SRC rust :results output :exports both
+fn main() {
+${0:println!("")}
+}
+#+END_SRC

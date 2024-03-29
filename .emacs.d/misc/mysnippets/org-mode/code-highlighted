@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: code syntax highlight with prettify
+# key: code
+# --
+#+CAPTION: ${1:caption}
+#+NAME: ${2:name}
+#+BEGIN_HTML
+<head>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+<body>
+<pre class="prettyprint">
+${3:code}
+</pre>
+</body>
+#+END_HTML

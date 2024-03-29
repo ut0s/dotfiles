@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: rep macro
+# key: rep
+# --
+REP(i,${1:N}){
+  cin >> ${2:A}[i];
+  $0
+}

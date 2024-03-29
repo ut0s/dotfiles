@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: image attr
+# key: attr
+# --
+#+attr_html: :width 850px

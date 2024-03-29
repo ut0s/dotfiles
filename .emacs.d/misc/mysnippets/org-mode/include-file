@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: include-file
+# key: include
+# --
+#+INCLUDE: "~/til/${1:dir}/bookmark/${2:name}"
+$0
