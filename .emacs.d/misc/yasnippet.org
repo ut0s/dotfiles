@@ -1,0 +1,210 @@
+#+TITLE: Yasnippet Configurations
+#+STARTUP: content
+
+* snippets
+#+begin_src elisp
+,#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/c++-mode/debug") :mkdirp yes :noweb yes
+,# -*- mode: snippet -*-
+,# name: output for debug
+,# key: debug
+,# --
+,cout << "(L:" << __LINE__ << ")" << " DEBUG: $0" << endl;
+,#+end_src
+#+end_src
+
+** c++-mode/
+*** debug
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/c++-mode/debug") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: output for debug
+# key: debug
+# --
+cout << "(L:" << __LINE__ << ")" << " DEBUG: $0" << endl;
+#+end_src
+*** for-auto-e
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/c++-mode/for-auto-e") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: for(auto e : array)
+# key: fore
+# --
+for(auto e : ${1:array}){
+  cout << e << endl;
+  $0
+}
+#+end_src
+*** rep
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/c++-mode/rep") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: rep macro
+# key: rep
+# --
+REP(i,${1:N}){
+  cin >> ${2:A}[i];
+  $0
+}
+#+end_src
+*** show
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/c++-mode/show") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: show vector
+# key: show
+# --
+template <class T>
+void show(vector<T>& v) {
+  for (uint i = 0; i < v.size(); i++) {
+    cout << v[i] << " ";
+  }
+  cout << "\n";
+}
+#+end_src
+** org-mode/
+*** caption-only
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/caption-only") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: caption
+# key: caption
+# --
+#+CAPTION: ${1:caption}
+#+end_src
+
+*** code-block
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/code-block") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: code block
+# key: code
+# --
+
+,#+NAME: ${1:name}
+,#+BEGIN_SRC ${2:language}
+  ${3:body}
+,#+END_SRC
+$0
+#+end_src
+
+*** code-highlighted
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/code-highlighted") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: code syntax highlight with prettify
+# key: code
+# --
+,#+CAPTION: ${1:caption}
+,#+NAME: ${2:name}
+,#+BEGIN_HTML
+<head>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+<body>
+<pre class="prettyprint">
+${3:code}
+</pre>
+</body>
+,#+END_HTML
+#+end_src
+
+*** html-attr
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/html-attr") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: image attr
+# key: attr
+# --
+,#+attr_html: :width 850px
+#+end_src
+
+*** img-with-caption
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/img-with-caption") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: image with caption
+# key: img
+# --
+,#+CAPTION: ${1:This is the caption for the next figure link (or table)}
+,#+NAME:   ${2:fig:SED-HR4049}
+[[${3:path to image}]]
+$0
+#+end_src
+
+*** include-file
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/include-file") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: include-file
+# key: include
+# --
+,#+INCLUDE: "~/til/${1:dir}/bookmark/${2:name}"
+$0
+#+end_src
+
+*** name-only
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/name-only") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: name
+# key: name
+# --
+,#+NAME: ${1:name}
+#+end_src
+
+*** src-code-cpp
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/src-code-cpp") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: src code block cpp
+# key: src
+# --
+,#+NAME: ${1:name}
+,#+BEGIN_SRC C++ :results scalar :exports both :flags "-std=c++11"
+$0
+,#+END_SRC
+#+end_src
+
+*** solarized-anime
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/solarized-anime") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: solarized animation config
+# key: anime
+# --
+,#+INFOJS_OPT: view:t toc:t ltoc:t mouse:underline buttons:0 path:http://thomasf.github.io/solarized-css/org-info.min.js
+$0
+#+end_src
+
+*** solarized-dark
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/solarized-dark") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: solarized dark
+# key: css
+# --
+,#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-dark.min.css" />
+$0
+#+end_src
+
+*** solarized-light
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/solarized-light") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: solarized light
+# key: css
+# --
+,#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-light.min.css" />
+$0
+#+end_src
+
+*** src-code-main
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/src-code-main") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: src code block cpp(main only)
+# key: src
+# --
+,#+NAME: ${1:name}
+,#+BEGIN_SRC C++ :results scalar :exports both :flags "-std=c++11" :includes <bits/stdc++.h> :namespaces std
+$0
+,#+END_SRC
+#+end_src
+
+*** src-code-rust
+#+begin_src snippet :tangle (expand-file-name "~/.emacs.d/misc/mysnippets/org-mode/src-code-rust") :mkdirp yes :noweb yes
+# -*- mode: snippet -*-
+# name: src code block for Rust
+# key: src
+# --
+,#+NAME: ${1:name}
+,#+BEGIN_SRC rust :results output :exports both
+fn main() {
+${0:println!("")}
+}
+,#+END_SRC
+#+end_src
